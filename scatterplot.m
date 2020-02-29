@@ -20,9 +20,7 @@ endfor
 
 X_std = featureScale(X);
 
-#X = log(X);
-
 figure('Units', 'pixels', 'Position', [100, 100, 600, 400]);
-plot(X(:, 1), X(:, 2), 'rx', 'MarkerSize', 10, 'LineWidth', 1.5)
+plot(X_std(:, 1), X_std(:, 2), 'rx', 'MarkerSize', 10, 'LineWidth', 1.5)
 xlabel('Heart rate');
 ylabel('Temperature');
